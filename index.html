@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Wix+Madefor+Text:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Wix+Madefor+Text:wght@400;700&display=swap"
+        rel="stylesheet" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Amanda Morais</title>
 </head>
+
 <body>
     <header class="header">
-        <a href="/" class="logo">
-            <i class="ph ph-stethoscope"></i>
-            <h1>Amanda Morais</h1>
-        </a>
+        <div class="resposiveMenu">
+            <i onclick="menuToggle()" class="ph ph-list hidden"></i>
+            <a href="/" class="logo">
+                <img src="./assets/LOGO.svg" alt="">
+            </a>
+        </div>
         <nav class="navigation">
             <ul>
                 <li>
@@ -31,11 +37,15 @@
                     <a href="#Contato">Contato</a>
                 </li>
             </ul>
+            <i class="ph ph-x hidden"></i>
         </nav>
         <button class="ctaButton">
             Agendar
             <i class="ph ph-calendar"></i>
         </button>
     </header>
+
+    <script src="/script.js"></script>
 </body>
+
 </html>

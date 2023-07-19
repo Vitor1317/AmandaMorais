@@ -7,6 +7,9 @@
 :root {
     --primary: #e7cfab;
     --primary-dark: #C48425;
+    --secondary: #92906F;
+    --brown: #6B3C20;
+    --brown-light: #674D3D;
 }
 
 body {
@@ -34,24 +37,69 @@ button {
     background: #ffffff;
 }
 
+.hidden {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 75%;
+    }
+
+    .header {
+        padding: 1rem 0.5rem;
+    }
+
+    .header  .ph-list {
+        display: block;
+        font-size: 2rem;
+    }
+     
+}
+
 /* Logotipo */
 
-.logo > .ph {
-    color: var(--primary);
-    font-size: 3rem;
+.resposiveMenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
 }
 
-.logo > h1 {
-    font-weight: normal;
-}
 
 .logo {
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 0.75rem;
     cursor: pointer;
 }
 
+.logo > img {
+    width: 142,5px;
+    height: 48px;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        gap: 0.5rem;
+    }
+
+    .logo > img {
+        width: unset;
+        height: unset;
+    }
+}
+
+
+
 /* Navigation */
+
+@media (max-width: 768px) {
+    .navigation {
+        display: none;
+    }
+}
 
 .navigation > ul {
     display: flex;
@@ -68,6 +116,7 @@ button {
 .navigation li:hover {
     border-bottom: 3px solid var(--primary);
     font-weight: bold;
+    color: var(--brown);
 }
 
 .ctaButton {
@@ -86,8 +135,9 @@ button {
 
 .ctaButton:hover {
     background-color: var(--primary);
+    border-color: var(--secondary);
     color: white;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, border-color 0.3s;
 }
 
 .ctaButton > .ph {
