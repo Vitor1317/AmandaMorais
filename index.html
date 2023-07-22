@@ -17,12 +17,13 @@
 <body>
     <header class="header">
         <div class="resposiveMenu">
-            <i onclick="menuToggle()" class="ph ph-list hidden"></i>
+            <i onclick="openMenu()" class="ph ph-list hidden"></i>
             <a href="/" class="logo">
                 <img src="./assets/LOGO.svg" alt="">
             </a>
         </div>
         <nav class="navigation">
+            <i onclick="closeMenu()" class="ph ph-x hidden"></i>
             <ul>
                 <li>
                     <a href="#Home">Home</a>
@@ -37,7 +38,6 @@
                     <a href="#Contato">Contato</a>
                 </li>
             </ul>
-            <i class="ph ph-x hidden"></i>
         </nav>
         <button class="ctaButton">
             Agendar

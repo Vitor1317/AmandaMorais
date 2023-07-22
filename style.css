@@ -33,8 +33,10 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 5rem;
     padding: 1rem 6rem;
     background: #ffffff;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 .hidden {
@@ -50,7 +52,7 @@ button {
         padding: 1rem 0.5rem;
     }
 
-    .header  .ph-list {
+    .hidden {
         display: block;
         font-size: 2rem;
     }
@@ -97,7 +99,26 @@ button {
 
 @media (max-width: 768px) {
     .navigation {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        color: white;
+        gap: 3rem;
+        position: fixed;
+        top: 0;
+        left: -70%;
+        background: var(--secondary);
+        width: 70%;
+        height: 100%;
+        transition: all 0.5s;
+    }
+
+    .navigation.open {
+        left: 0;
+    }
+
+    .navigation > ul {
+        flex-direction: column;
     }
 }
 
