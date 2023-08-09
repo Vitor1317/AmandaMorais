@@ -83,7 +83,7 @@ hr {
 }
 
 .logo>img {
-    width: 142, 5px;
+    width: 142,5px;
     height: 48px;
 }
 
@@ -200,10 +200,22 @@ hr {
     color: var(--secondary);
 }
 
+@media (max-width: 768px) {
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
 /* Main */
 
 .main {
     padding: 1rem 6rem;
+}
+
+@media (max-width: 768px) {
+    .main {
+        padding: 1rem 2rem;
+    }
 }
 
 #Home {
@@ -217,7 +229,6 @@ hr {
     display: flex;
     flex-direction: column;
     gap: 3rem;
-
     width: 50%;
 }
 
@@ -234,6 +245,27 @@ hr {
 .cta>p {
     font-family: 'Roboto Mono', monospace;
     font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    #Home {
+        flex-direction: column;
+    }
+
+    .cta {
+        width: 100%;
+        align-items: center;
+    }
+
+    .cta>h1 {
+        font-size: 4rem;
+        color: var(--secondary);
+        line-height: 1.1;
+    }
+
+    .imgCta > img {
+        width: 30rem;
+    }  
 }
 
 #Servicos {
@@ -383,7 +415,7 @@ footer {
 .footerContainer {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .footerLinks {
@@ -400,7 +432,7 @@ footer {
 }
 
 .footerLinks li:hover {
-    color: var(--primary);
+    color: var(--brown);
     list-style-type: disc;
 }
 
