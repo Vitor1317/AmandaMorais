@@ -27,6 +27,12 @@ button {
     cursor: pointer;
 }
 
+hr {
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
 /* MENU/HEADER */
 
 .header {
@@ -36,7 +42,6 @@ button {
     height: 5rem;
     padding: 1rem 6rem;
     background: #ffffff;
-    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 .hidden {
@@ -56,7 +61,7 @@ button {
         display: block;
         font-size: 2rem;
     }
-     
+
 }
 
 /* Logotipo */
@@ -77,8 +82,8 @@ button {
     cursor: pointer;
 }
 
-.logo > img {
-    width: 142,5px;
+.logo>img {
+    width: 142, 5px;
     height: 48px;
 }
 
@@ -87,13 +92,16 @@ button {
         gap: 0.5rem;
     }
 
-    .logo > img {
+    .logo>img {
         width: unset;
         height: unset;
     }
 }
 
-
+.overlay,
+.overlay header {
+    background: rgba(0, 0, 0, 0.7);
+}
 
 /* Navigation */
 
@@ -111,18 +119,26 @@ button {
         width: 70%;
         height: 100%;
         transition: all 0.5s;
+        z-index: 1;
     }
 
     .navigation.open {
         left: 0;
     }
 
-    .navigation > ul {
+    .navigation>ul {
+        height: 100%;
         flex-direction: column;
+        gap: 40px;
     }
+
+    .navigation a {
+        font-size: 2rem;
+    }
+
 }
 
-.navigation > ul {
+.navigation>ul {
     display: flex;
     align-items: center;
     gap: 2rem;
@@ -146,7 +162,7 @@ button {
     color: var(--primary);
     border: 2px solid var(--primary);
     border-radius: 9rem;
-    font-family: 'Roboto' , sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 1.125rem;
     display: flex;
@@ -161,6 +177,111 @@ button {
     transition: background-color 0.3s, border-color 0.3s;
 }
 
-.ctaButton > .ph {
+.ctaButton>.ph {
     font-size: 2rem;
 }
+
+/* Hero */
+
+.hero {
+    width: 100%;
+    height: 4rem;
+    background: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 5px #c2bbbb;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.hero p>i {
+    color: var(--secondary);
+}
+
+/* Main */
+
+.main {
+    padding: 1rem 6rem;
+}
+
+#Home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+
+.cta {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    width: 50%;
+}
+
+.cta>h1 {
+    font-size: 4rem;
+    color: var(--secondary);
+    line-height: 1.1;
+}
+
+.cta>h1>span {
+    color: var(--brown);
+}
+
+.cta>p {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.1rem;
+}
+
+#servicos {
+    padding-top: 3.5rem;
+}
+
+#servicos > h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: var(--brown);
+    margin-bottom: 9rem;
+}
+
+.servicosConatainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.amamentacao {
+    width: 34rem;
+    height: 30rem;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.txtServicos {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.txtServicos>h1 {
+    color: var(--primary-dark);
+    font-size: 2rem;
+}
+
+.txtServicos>p {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.5rem;
+}
+
