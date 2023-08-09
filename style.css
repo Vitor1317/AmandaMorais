@@ -98,11 +98,6 @@ hr {
     }
 }
 
-.overlay,
-.overlay header {
-    background: rgba(0, 0, 0, 0.7);
-}
-
 /* Navigation */
 
 @media (max-width: 768px) {
@@ -215,7 +210,7 @@ hr {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 4rem;
+    padding-bottom: 4rem;
 }
 
 .cta {
@@ -241,11 +236,12 @@ hr {
     font-size: 1.1rem;
 }
 
-#servicos {
+#Servicos {
     padding-top: 3.5rem;
+    padding-bottom: 9rem;
 }
 
-#servicos > h1 {
+#Servicos > h1 {
     display: flex;
     justify-content: center;
     font-size: 3rem;
@@ -283,5 +279,40 @@ hr {
 .txtServicos>p {
     font-family: 'Roboto Mono', monospace;
     font-size: 1.5rem;
+}
+
+#Sobre {
+    padding-top: 5rem;
+}
+
+.sobreContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sobreContainer > img {
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.txtSobre {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.txtSobre > h1 {
+    font-size: 3rem;
+    color: var(--primary-dark);
+}
+
+.txtSobreP {
+    font-size: 1.2rem;
+    line-height: 1.4;
 }
 
