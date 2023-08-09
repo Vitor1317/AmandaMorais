@@ -281,8 +281,11 @@ hr {
     font-size: 1.5rem;
 }
 
+/* Sobre */
+
 #Sobre {
     padding-top: 5rem;
+    padding-bottom: 6rem;
 }
 
 .sobreContainer {
@@ -314,5 +317,52 @@ hr {
 .txtSobreP {
     font-size: 1.2rem;
     line-height: 1.4;
+}
+
+/* Contato */
+
+#Contato {
+    padding-block: 5rem;
+}
+
+.contatoContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contatoContainer>h1 {
+    font-size: 3rem;
+}
+
+.contatoContainer>span {
+    font-size: 1.5rem;
+}
+
+.contatoLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border: 3px solid var(--brown);
+    padding: 3rem;
+    border-radius: 8px 40px;
+}
+
+.contatoLinks > a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.contatoLinks > a > i {
+    font-size: 3rem;
+    color: var(--primary-dark);
+}
+
+.contatoLinks > a strong {
+    color: var(--secondary);
 }
 
