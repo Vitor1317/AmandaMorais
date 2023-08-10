@@ -313,6 +313,30 @@ hr {
     font-size: 1.5rem;
 }
 
+@media (max-width: 768px) {
+    #Servicos > h1 {
+        margin-bottom: 3rem;
+    }
+
+    .servicosConatainer {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .amamentacao {
+        width: 28rem;
+        height: 28rem;
+    }
+
+    .txtServicos {
+        width: 100%;
+    }
+
+    .txtServicos > h1 {
+        font-size: 1.9rem;
+    }
+}
+
 /* Sobre */
 
 #Sobre {
@@ -349,6 +373,30 @@ hr {
 .txtSobreP {
     font-size: 1.25rem;
     line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+    .sobreContainer {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .sobreContainer > img {
+        width: 26rem;
+        height: 26rem;
+    }
+
+    .txtSobre {
+        width: 100%;
+    }
+
+    .txtSobre > h1 {
+        font-size: 2rem;
+    }
+    
+    .txtSobreP {
+        font-size: 1rem;
+    }
 }
 
 /* Contato */
