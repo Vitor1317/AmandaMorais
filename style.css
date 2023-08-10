@@ -447,6 +447,12 @@ hr {
     color: var(--secondary);
 }
 
+@media (max-width: 768px) {
+    .contatoLinks > a {
+        font-size: 1.3rem;
+    }
+}
+
 /* Footer */
 
 footer {
@@ -492,5 +498,12 @@ footer {
 
 .footerContato > i {
     font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding-inline: 0;
+        padding-block: 1rem;
+    }
 }
 
