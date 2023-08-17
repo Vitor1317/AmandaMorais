@@ -44,12 +44,13 @@
             Agendar
             <i class="ph ph-calendar"></i>
         </button>
-        
+
     </header>
     <div class="hero">
         <p>
             <i class="ph-fill ph-heart"></i>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            <strong>ENF Amanda Morais </strong> -
+            Consultora materno-infantil
         </p>
     </div>
 
@@ -57,11 +58,11 @@
         <section id="Home">
             <div class="cta">
                 <h1>
-                    Morbi mauris risus pretium nulla porttitor <span>augue nibh</span>
+                    Maternidade <span>uma forma de amor</span>
                 </h1>
                 <p>
-                    Ut in nisl ac nisi volutpat scelerisque. Aenean commodo dui a rutrum lobortis. Integer sollicitudin
-                    consequat augue, vel pretium augue ornare id. Ut dictum ante
+                    Maternidade vai muito além de gerar. É umas das formas mais genuínas de amor, carinho e dedicação ao
+                    outro.
                 </p>
                 <button class="ctaButton">
                     Agendar
@@ -75,21 +76,89 @@
         <hr />
         <section id="Servicos">
             <h1>Serviços</h1>
-            <div class="servicosConatainer">
-                <img class="amamentacao"
-                    src="https://images.unsplash.com/photo-1621349812876-4d94d86036a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-                    alt="">
-                <div class="txtServicos">
-                    <h1>Consultoria em amamentação</h1>
-                    <p>Curabitur a nulla tempus, lobortis arcu ac, elementum massa. Vivamus a egestas risus. Integer vel
-                        feugiat nisi. Fusce maximus sapien libero, id cursus augue rhoncus ut. Ut at nulla aliquam,
-                        lobortis nibh egestas, interdum ante. Praesent hendrerit, quam a tempor condimentum, nisl justo
-                        rhoncus urna, a cursus dui quam id turpis. Aenean semper,
-                    </p>
-                    <button class="ctaButton">
-                        Agendar
-                        <i class="ph ph-calendar"></i>
-                    </button>
+
+            <div class="accordion">
+                <div class="accordionItem">
+                    <div onClick="accordion(p1, icon1)" class="accordionTitle">
+                        <span>01. Consultoria de preparo para amamentação </span>
+                        <i id="icon1" class="ph ph-plus"></i>
+                    </div>
+                    <div id="p1" class="accordionHidden accordionText">
+                        <img src="https://images.unsplash.com/photo-1566906606688-642231fec1cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG1vdGhlciUyMGFuZCUyMGJhYnl8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
+                            alt="">
+                        <p>
+                            Consultoria realizada durante a gestação, onde serão feitas orientações fundamentais de
+                            preparo
+                            para amamentação, evitando possíveis intercorrências após o nascimento do bebê.
+                            Será abordado os tipos de mamas e mamilos, pega e posicionamento corretos, intercorrências
+                            que
+                            podem acontecer, benefícios da amamentação, implicações do uso de bicos artificiais, tipos
+                            de
+                            leite, apojadura, hora dourada, massagem e ordenha da mama e armazenamento de leite.
+                            <strong>*Serviço ofertado a domicilio ou online.</strong>
+                        </p>
+                    </div>
+                </div>
+                <div class="accordionItem">
+                    <div onClick="accordion(p2, icon2)" class="accordionTitle">
+                        <span>02. Consultoria em amamentação pós- parto </span>
+                        <i id="icon2" class="ph ph-plus"></i>
+                    </div>
+                    <div id="p2" class="accordionHidden accordionText">
+                        <img src="https://images.unsplash.com/photo-1583710457367-47de0ea21fef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                            alt="">
+                        <p>
+                            Realização de avaliação da mãe e bebê para identificar possíveis problemas e inseguranças,
+                            auxiliando com técnicas adequadas e prestando suporte a essa dupla.
+                            Será abordado sobre pega e posicionamento corretos, produção de leite, ganho de peso do
+                            bebê,
+                            fissuras mamilares, candidíase, ingurgitamento mamário, mastite puerperal, bloqueio de
+                            ductos,
+                            fenômeno de Raynaund.
+                            <strong>*Serviço ofertado a domicilio ou online.</strong>
+                        </p>
+                    </div>
+                </div>
+                <div class="accordionItem">
+                    <div onClick="accordion(p3, icon3)" class="accordionTitle">
+                        <span>03. Consultoria de retorno ao trabalho </span>
+                        <i id="icon3" class="ph ph-plus"></i>
+                    </div>
+                    <div id="p3" class="accordionHidden accordionText">
+                        <img src="https://images.unsplash.com/photo-1539343915366-4da26f7a1f2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+                            alt="">
+                        <p>
+                            Consultoria para a mãe que precisa retornar ao trabalho e deseja continuar a amamentar,
+                            proporcionando cuidado, proteção e os benefícios que somente o leite materno pode
+                            proporcionar.
+                            Será abordado sobre técnicas de ordenha, massagem, armazenamento e oferta do leite materno a
+                            criança.
+                            <strong>*Serviço ofertado a domicilio ou online.</strong>
+                        </p>
+                    </div>
+                </div>
+                <div class="accordionItem">
+                    <div onClick="accordion(p4, icon4)" class="accordionTitle">
+                        <span>04. Consultoria de primeiros cuidados com o recém-nascido </span>
+                        <i id="icon4" class="ph ph-plus"></i>
+                    </div>
+                    <div id="p4" class="accordionHidden accordionText">
+                        <img src="https://plus.unsplash.com/premium_photo-1676158159236-c1107d64217c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+                            alt="">
+                        <p>
+                            Os primeiros momentos de vida do recém-nascido podem apresentar certas dúvidas e desafios, e
+                            é
+                            por isso que ter um profissional capacitado e dando suporte faz total diferença.
+                            Será abordado higiene do coto umbilical, frequência e características do xixi e cocô,
+                            higiene
+                            nasal, intima, massagem de conforto, como acalmar o bebê, banho de rotina e banho
+                            tranquilizante, corte de unhas, vestuário, banho de sol, como aliviar a cólica, sono do
+                            bebê,
+                            como preparar e armazenar o leite, posicionamento para amamentar, prevenção de morte súbita,
+                            risco do uso de bicos artificiais e uso do bebê conforto.
+                            <strong>*Serviço ofertado a domicilio ou online.</strong>
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -99,19 +168,29 @@
                 <img src="https://images.unsplash.com/photo-1482849297070-f4fae2173efe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
                     alt="">
                 <div class="txtSobre">
-                    <h1>Quem é Amanda Morais ?</h1>
-                    <div class="txtSobreP">
-                        <p>Nam ac magna in velit consequat congue. Quisque est orci, fringilla eget euismod at, blandit
-                            ac libero. Proin ultricies tincidunt feugiat. Integer enim mauris, congue eu tristique eget,
-                            malesuada eget nisi. Nam at auctor velit. Vestibulum erat sem, dignissim et felis sit amet,
-                            congue semper nibh. Phasellus pretium, risus eget luctus molestie, enim orci lacinia ex, at
-                            elementum dui nulla in urna. Nam sit amet nibh velit.</p>
-                        <p>Nam ac magna in velit consequat congue. Quisque est orci, fringilla eget euismod at, blandit
-                            ac libero. Proin ultricies tincidunt feugiat. Integer enim mauris, congue eu tristique eget,
-                            malesuada eget nisi. Nam at auctor velit. Vestibulum erat sem, dignissim et felis sit amet,
-                            congue semper nibh. Phasellus pretium, risus eget luctus molestie, enim orci lacinia ex, at
-                            elementum dui nulla in urna. Nam sit amet nibh velit.</p>
-                    </div>
+                    <h1>Quem sou eu ?</h1>
+                    <ul class="txtSobreUl">
+                        <li>
+                            Consultora em amamentação e cuidados com recém-nascido;
+                        </li>
+                        <li>
+                            Apaixonada pela área materno-infantil desde a graduação;
+                        </li>
+                        <li>
+                            Comunicativa, curiosa, sonhadora, dedicada e criativa;
+                        </li>
+                        <li>
+                            Pós graduanda em obstetrícia e UTI neonatal e pediátrica;
+                        </li>
+                        <li>
+                            Busco constante atualização através de cursos, palestras, congressos com profissionais
+                            referenciais na área;
+                        </li>
+                        <li>
+                            Tenho como missão prestar uma assistência humanizada diante dos desafios enfrentados durante
+                            o ciclo gravídico- puerperal, promovendo acolhimento, respeito e informação adequada.
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -121,17 +200,17 @@
                 <h1>Entre em Contato</h1>
                 <span>Para dúvidas e agendamentos entre em contato conosco.</span>
                 <div class="contatoLinks">
-                    <a href="">
+                    <a href="https://api.whatsapp.com/send/?phone=5561984975968&text&type=phone_number&app_absent=0">
                         <i class="ph ph-whatsapp-logo"></i>
-                        <span><strong>Whatsapp:</strong> (22)99999-9999</span>
+                        <span><strong>Whatsapp:</strong> (61) 98497-5968</span>
                     </a>
-                    <a href="">
+                    <a href="https://www.instagram.com/enf.amanda_morais/">
                         <i class="ph ph-instagram-logo"></i>
-                        <span><strong>Instagram:</strong> @amanda123</span>
+                        <span><strong>Instagram:</strong> @enf.amanda_morais</span>
                     </a>
-                    <a href="">
+                    <a href="mailto:enfamandamorais@outlook.com">
                         <i class="ph ph-envelope"></i>
-                        <span><strong>Email:</strong> amanda@email.com</span>
+                        <span><strong>Email:</strong> enfamandamorais@outlook.com</span>
                     </a>
                 </div>
             </div>
@@ -165,19 +244,19 @@
                 <h2>Contato</h2>
                 <ul>
                     <li>
-                        <a class="footerContato" href="#Home">
+                        <a class="footerContato" href="https://api.whatsapp.com/send/?phone=5561984975968&text&type=phone_number&app_absent=0">
                             <i class="ph ph-whatsapp-logo"></i>
                             Whatsapp
                         </a>
                     </li>
-                    <li> 
-                        <a class="footerContato" href="#Servicos">
+                    <li>
+                        <a class="footerContato" href="https://www.instagram.com/enf.amanda_morais/">
                             <i class="ph ph-instagram-logo"></i>
                             Instagram
                         </a>
                     </li>
                     <li>
-                        <a class="footerContato" href="#Sobre"><i class="ph ph-envelope"></i>
+                        <a class="footerContato" href="mailto:enfamandamorais@outlook.com"><i class="ph ph-envelope"></i>
                             Email
                         </a>
                     </li>
