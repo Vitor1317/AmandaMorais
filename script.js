@@ -24,3 +24,7 @@ function accordion(element, icon) {
     icon.classList.toggle('iconRotate')
     element.classList.toggle('accordionHidden')
 }
+
+function redirect() {
+    window.open('https://api.whatsapp.com/send/?phone=5561984975968&text&type=phone_number&app_absent=0')
+}
