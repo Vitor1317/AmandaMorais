@@ -26,5 +26,5 @@ function accordion(element, icon) {
 }
 
 function redirect() {
-    window.open('https://api.whatsapp.com/send/?phone=5561984975968&text&type=phone_number&app_absent=0')
+    window.open('https://api.whatsapp.com/send/?phone=5561984975968&text=Olá,+Enf+Amanda+Morais+agradece+seu+contato.+Como+podemos+ajuda-lo?&type=phone_number&app_absent=0')
 }
