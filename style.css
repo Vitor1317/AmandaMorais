@@ -10,7 +10,7 @@
     --primary-light: #e2d8c9;
     --secondary: #92906F;
     --brown: #6B3C20;
-    --brown-light: #674D3D;
+    --brown-light: #e4b192;
 }
 
 body {
@@ -152,11 +152,9 @@ hr {
     color: var(--brown);
 }
 
-.ctaButton {
+.button {
     width: 9rem;
     height: 3rem;
-    color: var(--primary);
-    border: 2px solid var(--primary);
     border-radius: 9rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
@@ -166,13 +164,29 @@ hr {
     justify-content: space-around;
 }
 
-.ctaButton:hover {
+.btnPrimary {
+    color: var(--primary);
+    border: 2px solid var(--primary);
+}
+
+.btnSecondary {
+    color: var(--brown-light);
+    border: 2px solid var(--brown-light);
+}
+
+.btnPrimary:hover {
     background-color: var(--primary);
     color: white;
     transition: background-color 0.3s, border-color 0.3s;
 }
 
-.ctaButton>.ph {
+.btnSecondary:hover {
+    background-color: var(--brown-light);
+    color: white;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.button>.ph {
     font-size: 2rem;
 }
 
@@ -302,6 +316,10 @@ hr {
     font-size: 1.5rem;
     width: 50%;
     color: #3b3b3b;
+}
+
+.accordionText > p > strong {
+    font-size: 0.75rem;
 }
 
 .accordionText {
