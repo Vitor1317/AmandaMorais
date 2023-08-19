@@ -234,13 +234,13 @@ hr {
 
 #Home {
     width: 100vw;
-    height: 100%;
+    height: 60rem;
     display: flex;
     align-items: center;
     justify-content: center;
     padding-bottom: 4rem;
     margin-inline: -6rem;
-    background-image: url('https://avatars.mds.yandex.net/i?id=a26159c1cd4c6b72e9256db812a79596a91a6432-5337213-images-thumbs&n=13');
+    background-image: url('https://images.unsplash.com/photo-1550791752-e05c2c2aab27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
@@ -268,7 +268,6 @@ hr {
 .cta>p {
     font-family: 'Roboto Mono', monospace;
     font-size: 1.1rem;
-    color: e6e7e6;
 }
 
 .imgCta > img {
@@ -287,6 +286,7 @@ hr {
     .cta {
         width: 100%;
         align-items: center;
+        padding-left: 1rem;
     }
 
     .cta>h1 {
