@@ -285,8 +285,13 @@ hr {
         line-height: 1.1;
     }
 
+    .imgCta {
+        margin-top: 3rem;
+    }
+
     .imgCta > img {
-        width: 30rem;
+        width: 20rem;
+        height: 20rem;
     }  
 }
 
