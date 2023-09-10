@@ -237,6 +237,7 @@ hr {
 
 #Home {
     margin-inline: -6rem;
+    max-width: calc(100vw + 4rem);
     padding-inline: 6rem;
     height: 100vh;
     display: flex;
